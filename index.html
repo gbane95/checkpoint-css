@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mon Portfolio</title>
+
+</head>
+
+<body>
+
+    <!------------ barre de navigation -------------->
+    <header class="header">
+        <h1 class="header-title"> Bienvenue sur Mon Portfolio</h1>
+        <nav class="nav-container">
+            <div class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></div>
+            <div class="nav-item"><a class="nav-link" href="#apropos">À Propos</a></div>
+            <div class="nav-item"><a class="nav-link" href="#travail">Travail</a></div>
+            <div class="nav-item"><a class="nav-link" href="#cv">CV</a></div>
+            <div class="nav-item"><a class="nav-link" href="#contact">Contact</a></div>
+        </nav>
+    </header>
+
+    <!------------- la section a-propos -------------->
+    <main class="main-content">
+        <section id="apropos" class="about-section">
+            <h2 class="section-title">À Propos</h2>
+            <p class="about-text">Je suis un développeur passionné qui aime la programmation.</p>
+            <video class="about-video" controls>
+                <source src="video/video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </section>
+
+        <!------------- la section mon travail -------------->
+        <section id="travail" class="work-section">
+            <h2 class="section-title">Mon Travail</h2>
+            <ul class="work-list">
+                <li class="work-item">Projet : Portfolio interactif.</li>
+            </ul>
+        </section>
+
+        <!------------- la section mon cv -------------->
+        <section id="cv" class="cv-section">
+            <h2 class="section-title">Mon CV</h2>
+            <table class="cv-table">
+                <thead>
+                    <tr>
+                        <th class="cv-header">Année</th>
+                        <th class="cv-header">Événement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cv-year">2022</td>
+                        <td class="cv-event">Licence en développement d'application et e-service</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!------------- la section contact -------------->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact</h2>
+            <form class="contact-form" action="#" method="post">
+                <label class="form-label" for="nom">Nom:</label>
+                <input class="form-input" type="text" id="nom" name="nom" required>
+
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+
+                <label class="form-label" for="message">Message:</label>
+                <textarea class="form-textarea" id="message" name="message" rows="5" required></textarea>
+
+                <button class="form-button" type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <!------------- footer -------------->
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
